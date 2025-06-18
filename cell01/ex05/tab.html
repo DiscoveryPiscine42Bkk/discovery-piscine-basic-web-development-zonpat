@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Exercise 05: Tab</title>
+    <style>
+        /* CSS สำหรับจัดรูปแบบ */
+        body {
+            font-family: sans-serif; /* ตั้งค่าฟอนต์ทั่วไป */
+            display: flex; /* ใช้ flexbox เพื่อจัดตารางให้อยู่กึ่งกลางหน้าจอ */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* กำหนดความสูงขั้นต่ำให้เต็มหน้าจอเพื่อให้จัดกึ่งกลางได้ */
+            margin: 0;
+            background-color: #f0f0f0; /* สีพื้นหลังหน้าเว็บเผื่อไว้ */
+        }
+
+        table {
+            border-collapse: collapse; /* ทำให้เส้นขอบตารางติดกัน ไม่แยกจากกัน */
+            width: 80%; /* กำหนดความกว้างของตาราง อาจปรับเปลี่ยนได้ */
+            max-width: 600px; /* กำหนดความกว้างสูงสุด */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* เพิ่มเงาให้ดูมีมิติ */
+        }
+
+        td {
+            padding: 20px; /* ระยะห่างภายในเซลล์ */
+            text-align: center; /* จัดข้อความกลางเซลล์ */
+            color: white; /* สีข้อความ */
+            font-weight: bold; /* ตัวหนา */
+            font-size: 1.2em; /* ขนาดตัวอักษร */
+            /* border: 1px solid #ddd; */ /* ถ้าต้องการเส้นขอบแต่ละเซลล์ */
+        }
+
+        /* สีสำหรับแต่ละเซลล์ */
+        .first-cell {
+            background-color: #4CAF50; /* สีเขียวเข้มคล้ายตัวอย่าง */
+        }
+
+        .second-cell {
+            background-color: #FFC0CB; /* สีชมพูอ่อนคล้ายตัวอย่าง (Pink) */
+        }
+    </style>
 </head>
 <body>
-    
+
+    <table>
+        <tr>
+            <td class="first-cell">First cell</td>
+            
+            <td class="second-cell">Second cell</td>
+        </tr>
+    </table>
+
 </body>
 </html>
